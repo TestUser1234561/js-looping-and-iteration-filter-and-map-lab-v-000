@@ -12,7 +12,5 @@ function exactMatch(arr, value) {
 }
 
 function exactMatchToList(arr, value) {
-  let newArr = [];
   return arr.filter(driver => driver[Object.keys(value)[0]] == value[Object.keys(value)[0]]).map(d => d.name)
-  return newArr
 }
